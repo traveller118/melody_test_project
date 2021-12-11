@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Bebas Neue';
     src: local('Bebas Neue Regular Regular'), local('BebasNeueRegular'),
-        url('./fonts/BebasNeueRegular.woff2') format('woff2'),
-        url('./fonts/BebasNeueRegular.woff') format('woff');
+        url('../fonts/BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/BebasNeueRegular.woff') format('woff');
     font-display: swap;
 }
 
@@ -47,12 +47,12 @@ body {
     display: block;
     color: #fff;
     margin-bottom: 4px;
-    font-size: 14px;
+    font-size: 22px;
     line-height: 16px;
 }
 .navbar-phone {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 22px;
     line-height: 20px;
     text-decoration: none;
     color: #fff;
@@ -84,7 +84,7 @@ body {
     align-items: center;
 }
 .counter-button {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     cursor: pointer;
 }
@@ -111,4 +111,74 @@ body {
     border: none;
     padding: 16px 36px;
     cursor: pointer;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .navbar {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .navbar-menu {
+        display: none;
+    }
+    .navbar-contacts {
+        padding-top: 2%;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 20px;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+    }
+    .main {
+        max-width: 100%;
+        margin: auto;
+        padding-bottom: 95px;
+        display: block;
+        background-image: url(/img/home.png);
+    }
+    .main-info {
+        color: #3596F5;
+        margin: 0;
+        background: #59595987;
+        border-radius: 6px;
+        color: white;
+        border: none;
+        padding: 16px 36px;
+        cursor: pointer;
+    }
+    .main-image {
+        display: none;
+    }
+    .main-title {
+
+        font-size: 37px;
+        line-height: 44px;      
+        color: #fff;
+    }
+    .counter {
+        color: #ffffff;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 158px;
+    }
+    .counter-arrow {
+        padding: 10px;
+    }
+    .button-primary {
+        background: #3596F5;
+        border-radius: 6px;
+        color: white;
+        border: none;
+        padding: 16px 36px;
+    }
 }
