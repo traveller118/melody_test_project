@@ -40,7 +40,7 @@ body {
     text-decoration: none;
     color: #fff;
 }
-.navbar-conacts {
+.navbar-contacts {
     text-align: right;
 }
 .navbar-text {
@@ -120,16 +120,16 @@ body {
         margin: auto;
         display: block;
         align-items: center;
-    }
-    .logo {
+        }
+        .logo {
         display: flex;
         margin-left: auto;
         margin-right: auto
-    }
-    .navbar-menu {
+        }
+        .navbar-menu {
         display: none;
-    }
-    .navbar-contacts {
+        }
+        .navbar-contacts {
         padding-top: 2%;
         font-weight: 700;
         font-size: 17px;
@@ -137,15 +137,15 @@ body {
         text-decoration: none;
         color: #fff;
         text-align: center;
-    }
-    .main {
+        }
+        .main {
         max-width: 100%;
         margin: auto;
         padding-bottom: 95px;
         display: block;
         background-image: url(/img/home.png);
-    }
-    .main-info {
+        }
+        .main-info {
         color: #3596F5;
         margin: 0;
         background: #59595987;
@@ -154,29 +154,61 @@ body {
         border: none;
         padding: 16px 36px;
         cursor: pointer;
-    }
-    .main-image {
+        }
+        .main-image {
         display: none;
-    }
-    .main-title {
-
+        }
+        .main-title {
+        
         font-size: 37px;
-        line-height: 44px;      
+        line-height: 44px;
         color: #fff;
-    }
-    .counter {
+        }
+        .counter {
         color: #ffffff;
         font-family: 'Bebas Neue', sans-serif;
         font-size: 158px;
-    }
-    .counter-arrow {
+        }
+        .counter-arrow {
         padding: 10px;
-    }
-    .button-primary {
+        }
+        .button-primary {
         background: #3596F5;
         border-radius: 6px;
         color: white;
         border: none;
         padding: 16px 36px;
+        }
+        }
+}
+
+@media (max-width: 1024px) { 
+.home-image {
+    height: 100%;
+}
+.navbar {
+    max-width: 1024px;
+    margin-left: 10%;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar-menu {
+    display: none;
+}
+    .main-info {
+        justify-content: space-evenly;
     }
+    .counter-down {
+        transform: rotateX(180deg);
+    }
+.main {
+    padding-top: 0px;
+}
+    .counter {
+        color: #635854;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 158px;
+    }
+.home-image {
+    width: 60vw;
 }
