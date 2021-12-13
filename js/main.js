@@ -23,7 +23,6 @@ $(document).ready(function () {
     //Наведение мышкой на список квартиры
 
     FlatListLi.on("mouseover", function() {
-        FlatListLi.removeClass("current-floor");
         currentFlat = $(this).attr("data-fitem");
         $(`[data-flat=${currentFlat}]`).toggleClass("flat-path-mouseover");
       });
