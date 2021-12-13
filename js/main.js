@@ -1,14 +1,14 @@
 $(document).ready(function () {
-    const currentFloor = 2; //переменная где хранится значение текущего этажа
-    const currentFlat = 1; //переменная с номером квартиры
-    const floorPath = $(".home-image path"); //каждый отдельный этаж в SVG
-    const counterUp = $(".counter-up"); /*Кнопка увеличения этажа*/
-    const counterDown = $(".counter-down"); /*Кнопка уменьшения этажа*/
-    const modal = $(".modal");
-    const modalCloseButton = $(".modal-close-button");
-    const viewFlatsButton = $(".view-flats");
-    const flatPath = $(".flat path");
-    const FlatListLi = $(".flat-list li");
+    var currentFloor = 2; //переменная где хранится значение текущего этажа
+    var currentFlat = 1; //переменная с номером квартиры
+    var floorPath = $(".home-image path"); //каждый отдельный этаж в SVG
+    var counterUp = $(".counter-up"); /*Кнопка увеличения этажа*/
+    var counterDown = $(".counter-down"); /*Кнопка уменьшения этажа*/
+    var modal = $(".modal");
+    var modalCloseButton = $(".modal-close-button");
+    var viewFlatsButton = $(".view-flats");
+    var flatPath = $(".flat path");
+    var FlatListLi = $(".flat-list li");
 
     //Наведение мышкой на изображение квартиры
 
