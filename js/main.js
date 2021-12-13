@@ -1,7 +1,6 @@
 $(document).ready(function () {
     var currentFloor = 2; //переменная где хранится значение текущего этажа
     var currentFlat = 1; //переменная с номером квартиры
-    var currentDF = 1; 
     var floorPath = $(".home-image path"); //каждый отдельный этаж в SVG
     var counterUp = $(".counter-up"); /*Кнопка увеличения этажа*/
     var counterDown = $(".counter-down"); /*Кнопка уменьшения этажа*/
@@ -69,18 +68,7 @@ $(document).ready(function () {
     function toggleModal () { //Ункция открыть-закрыть окно
         modal.toggleClass("is-open");}
 
-   //Список
-   dataFItem.on("mouseover", function() {
-    $(`.flat-list li:eq(${currentFlatOrder})`).addClass("flat-link-mouseover");
-    dataFItem.removeClass("flat-mouseover");
-    currentDF = $(this).attr("data-fitem");
-    usCurrentDF = currentDF.toLocaleString("en-US", {minimumIntegerDigits: 2, 
-    useGrouping: false }); //форматируем переменную с этажем 
-    $(`[data-fitem=${usCurrentDF}]`).toggleClass("flat-mouseover");
-});
-
-
-
+ 
     //Наведение мышкой квартиру
     flats.on("mouseover", function() {
         floorPath.removeClass("current-floor"); //Удаляем активный класс этажа
